@@ -1,0 +1,50 @@
+.banner-img-container {
+    width: 100vw;
+}
+
+.city-landscape {
+    background-image: url('../../assets/images/city-landscape.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    min-height: 20%;
+}
+
+.skip-button {
+    float: right;
+    height: 3rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.banner {
+    width: 100vw;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 3rem;
+    font-family: Bradley Hand ITC;
+    background: #fff;
+    height: calc(100% - 36rem);
+}
+
+.banner .header {
+    font-size: 4rem;
+    padding: 1.5rem;
+    color: #fff;
+    background-color: #2b4b7d;
+    font-weight: 600;
+}
+
+.banner .sub-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 0.5rem;
+    border: 1px solid #2b4b7d;
+}

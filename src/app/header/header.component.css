@@ -1,0 +1,36 @@
+.header {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    background-color: #fff;
+    transition: ease-out 0.5s;
+}
+
+.landing-header {
+    height: 40vh;
+}
+
+.dashboard-header {
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.logoTxt {
+    text-transform: uppercase;
+}
+
+.iirs-header-text {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.goi-header-text {
+    font-size: 1.2rem;
+}
+
+.isro-header-text {
+    font-size: 1.1rem;
+}

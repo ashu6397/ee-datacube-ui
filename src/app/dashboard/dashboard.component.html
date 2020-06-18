@@ -1,0 +1,14 @@
+<div class="dashboard-body">
+    <div class="apps">
+        <ng-container *ngIf="appService.appsList">
+            <div class="app-card mat-elevation-z4" *ngFor="let app of appService.appsList" (click)="selectApp(app)"
+                [ngClass]="appService.appsReference[app.id] && appService.appsReference[app.id]['visited']?'card-visited':''"
+                matRipple>
+                <div class="app-label">
+                    {{app.label}}
+                </div>
+                <div class="card-description">{{app.description}}</div>
+            </div>
+        </ng-container>
+    </div>
+</div>

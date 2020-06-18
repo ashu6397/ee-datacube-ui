@@ -1,0 +1,22 @@
+<mat-tab-group (selectedTabChange)="showHide($event)" #appTab>
+    <mat-tab disabled>
+        <ng-template mat-tab-label style="width: max-content !important;">
+            <button mat-icon-button (click)="gotoDashboard()">
+                <mat-icon>home</mat-icon>
+            </button>
+        </ng-template>
+    </mat-tab>
+    <ng-container *ngFor="let app of appService.visitedApps; trackBy:trackMapIndex;">
+        <mat-tab>
+            <ng-template mat-tab-label style="width: max-content !important;">
+                <span>{{app['label']}}</span>
+                <button mat-icon-button (click)="closeTab(app)">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </ng-template>
+        </mat-tab>
+    </ng-container>
+</mat-tab-group>
+<div *ngFor="let app of appService.visitedApps; let i = index; trackBy:trackMapIndex;">
+    <app-map [appLink]="app['appSrc']" [hidden]="selectedIndex!=i+1"></app-map>
+</div>

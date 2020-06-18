@@ -1,1 +1,9 @@
-<p>map works!</p>
+<div class="map-loader" [hidden]="isLoaderHidden">
+    <div class="wrapper">
+        <div class="blue ball"></div>
+        <div class="red ball"></div>
+        <div class="yellow ball"></div>
+        <div class="green ball"></div>
+    </div>
+</div>
+<iframe [src]="appLink|safe" frameborder="0" class="map" (load)="hideLoader()"></iframe>

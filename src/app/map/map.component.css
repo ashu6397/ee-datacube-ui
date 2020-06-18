@@ -1,0 +1,62 @@
+.map {
+    height: calc(100vh - 5rem);
+    width: calc(100% - 1rem);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+/* map - loader */
+
+.map-loader {
+    bottom: 0;
+    height: 200px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    position: relative;
+}
+
+.ball {
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    margin: 0 10px;
+    animation: 1s bounce ease infinite;
+}
+
+.blue {
+    background-color: #4285F5;
+}
+
+.red {
+    background-color: #EA4436;
+    animation-delay: .25s;
+}
+
+.yellow {
+    background-color: #FBBD06;
+    animation-delay: .5s;
+}
+
+.green {
+    background-color: #34A952;
+    animation-delay: .75s;
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(25px);
+    }
+}

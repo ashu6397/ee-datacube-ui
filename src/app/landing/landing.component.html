@@ -1,0 +1,12 @@
+<div class="banner">
+    <div class="header">Urban Informatica</div>
+    <div class="sub-header">A space based information repository of urban areas with some ground characteristics
+    </div>
+    <div>
+        <button mat-raised-button color="primary" (click)="appService.skipBanner()" class="skip-button">Skip
+            Intro ({{appService.limit*1000 - appService.accumulator | date: 's'}}s)</button>
+    </div>
+</div>
+<div class="banner-img-container">
+    <div class="city-landscape"></div>
+</div>
